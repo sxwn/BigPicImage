@@ -20,14 +20,19 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class BigView extends View implements GestureDetector.OnGestureListener,View.OnTouchListener {
+
     //加载矩形
     private Rect mRect;
+
     //图片参数
     private BitmapFactory.Options mOptions;
+
     //手势
     private GestureDetector mGesture;
+
     //滚动
     private Scroller mScroller;
+
     //图片宽高
     private int mImageWidth,mImageHeight;
 
