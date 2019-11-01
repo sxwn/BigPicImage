@@ -1,0 +1,22 @@
+动态代理  横切面
+AspectJ 横切面
+
+AspectJ  作者
+最原始的方式入手
+Test.java  javac  Test.class
+Test.java  javac + AspectJ    Test.class
+
+例如: 下面代码是Test.class
+    @NetworkCheck
+    public void startAction1(){
+        add code
+        //跳转逻辑
+        startActivity(... ...);
+        add code
+    }
+
+如果是注解处理器来完成的话，必须是编译器来完成  class
+
+日志埋点   权限申请  网络检测   集中式登录  ... ...
+
+零零散散的
